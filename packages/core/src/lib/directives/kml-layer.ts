@@ -81,6 +81,7 @@ export class AgmKmlLayer implements OnInit, OnDestroy, OnChanges {
       return;
     }
     this._updatePolygonOptions(changes);
+    this._addEventListeners();
   }
 
   private _updatePolygonOptions(changes: SimpleChanges) {
